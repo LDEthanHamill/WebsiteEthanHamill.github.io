@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+            <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+            <script src="javaScript.js"></script>
+
+    </head>
+    <header>
+        <center>
+        <a class="button" href="home.html">Home</a>
+        <a class="button" href="about.html">About</a>
+        <a class="button" href="portfolio.html">Portfolio</a>
+        <a class="button" href="gallery.html">Gallery</a>
+        <a class="button" href="contact.html">Contact</a>
+
+        </center>
+    </header>
+    
+    <body>
+<br>
+        
+        <h1> Lighting Designer Ethan Hamill</h1>
+        <br>
+<div class="slideshow-container">
+   
+    <div class="mySlides fade">
+  <img src="Images/HomeScrollerImages/AllDay2019-1.jpg" style="width:100%">
+  <div class="text">Allday | UC Refectory</div>
+</div>
+    
+      <div class="mySlides fade">
+  <img src="Images/HomeScrollerImages/FadingCyt-2.jpg" style="width:100%">
+  <div class="text">Fading By Canberra Youth Theatre | Directed by Katie Cawthrone | Written by Laura Lethlean |Canberra Theatre Center Courtyard Studio</div>
+</div>
+    
+       <div class="mySlides fade">
+  <img src="Images/HomeScrollerImages/Faster2018-2.jpg" style="width:100%">
+  <div class="text">Faster By Canberra Youth Theatre | Directed by Emily Sheehan & Kyle Walmsley | West Courtyard | Gorman Arts Centre</div>
+</div>
+    
+         <div class="mySlides fade">
+  <img src="Images/HomeScrollerImages/Faster208-1.jpg" style="width:100%">
+  <div class="text">Faster By Canberra Youth Theatre | Directed by Emily Sheehan & Kyle Walmsley | West Courtyard | Gorman Arts Centre</div>
+</div>
+    
+         <div class="mySlides fade">
+  <img src="Images/HomeScrollerImages/HLHouses%20Img2.JPG" style="width:100%">
+  <div class="text">Hands Like Houses | UC Refectory</div>
+</div>
+    
+         <div class="mySlides fade">
+  <img src="Images/HomeScrollerImages/MallRat-3.JPG" style="width:100%">
+  <div class="text">Mallrat | UC Refectory</div>
+</div>
+
+         <div class="mySlides fade">
+  <img src="Images/HomeScrollerImages/SpiderBait-1.JPG" style="width:100%">
+  <div class="text">SpiderBait | UC Refectory</div>
+</div>
+
+         <div class="mySlides fade">
+  <img src="Images/HomeScrollerImages/SpiderBait-2.JPG" style="width:100%">
+  <div class="text">Spiderbait | UC Refectory</div>
+</div>
+
+         <div class="mySlides fade">
+  <img src="Images/HomeScrollerImages/TheGreekProject-1.jpeg" style="width:100%">
+  <div class="text">The Greek Project by Canberra Youth Theatre | Directed by Katie Cawthrone | C-Block Theatre Gourman House</div>
+</div>
+
+         <div class="mySlides fade">
+  <img src="Images/HomeScrollerImages/TheGreekProject-2.jpeg" style="width:100%">
+  <div class="text">The Greek Project by Canberra Youth Theatre | Directed by Katie Cawthrone | C-Block Theaetre Gourman House</div>
+</div>
+
+         <div class="mySlides fade">
+  <img src="Images/HomeScrollerImages/VeraBlue2019-2.jpg" style="width:100%">
+  <div class="text">Vera Blue | UC Refectory</div>
+</div>
+
+             <div class="mySlides fade">
+  <img src="Images/HomeScrollerImages/VeraBlue2019-3.jpg" style="width:100%">
+  <div class="text">Vera Blue | UC Refectory</div>
+</div>
+         <div class="mySlides fade">
+  <img src="Images/HomeScrollerImages/VersionsOfUs-4.jpeg" style="width:100%">
+  <div class="text">Versions of Us by Canberra Youth Theatre | Directed by Jess Baker & Jamie Winbank | Written by Emily Sheehan | Ralph Wilson Theatre Gourman House</div>
+</div>
+
+
+
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+    <span class="dot" onclick="currentSlide(7)"></span>
+    <span class="dot" onclick="currentSlide(8)"></span>
+    <span class="dot" onclick="currentSlide(9)"></span>
+    <span class="dot" onclick="currentSlide(10)"></span>
+    <span class="dot" onclick="currentSlide(11)"></span>
+    <span class="dot" onclick="currentSlide(12)"></span>
+    <span class="dot" onclick="currentSlide(13)"></span>
+    
+</div>
+        
+    <script>
+        var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}</script>
+        <br>
+        <br>
+    Welcome to Ethan Hamill's Website. Feel free to explore the differnt pages to find out more infaromtion about Ethan and the <br>
+        shows that he has worked on & contact Ethan. 
+        
+        <br>
+        <br>
+        
+        <a href="Login.html">Click here</a> to login if you are a member that Ethan has given information to. 
+        
+    </body>
+    
+    <footer>
+    
+        <P> Ethan Hamill 2019</P> <a href="Disclamer.html">Disclamer</a> <a href="TermsandCondition.html">Terms & Conditions</a>
+        
+    </footer>
+</html>

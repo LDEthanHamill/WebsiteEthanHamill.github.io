@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+            <link rel="stylesheet" type="text/css" href="stylesheet.css">
+            <script src="javaScript.js"></script>
+    </head>
+    <header>
+        <center>
+        <a class="button" href="home.html">Home</a>
+        <a class="button" href="about.html">About</a>
+        <a class="button" href="portfolio.html">Portfolio</a>
+        <a class="button" href="gallery.html">Gallery</a>
+        <a class="button" href="contact.html">Contact</a>
+
+        </center>
+    </header>
+    
+    <body>
+<br>
+        <h1> Gallery </h1>
+        <br>
+        
+        <div class="slideshow-container">
+   
+    <div class="mySlides fade">
+  <img src="Images/GalleryImages/Collapse%206.jpg" style="width:100%">
+  <div class="text">Canberra Youth Theatre  |   Collapse by Grace de Morgan   |   2019  |   Stage Manager  / Associate Lighting Designer</div>
+</div>
+    
+      <div class="mySlides fade">
+  <img src="Images/GalleryImages/Collapse%207.jpg" style="width:100%">
+          <div class="text">Canberra Youth Theatre  |   Collapse by Grace de Morgan   |   2019  |   Stage Manager  / Associate Lighting Designer </div>
+</div>
+    
+       <div class="mySlides fade">
+  <img src="Images/GalleryImages/EHOperator1.JPG" style="width:100%">
+   <div class="text">Sidestage Production Services  |   Mallrat @ UC Refectory   |   2019  |   Lighitng Designer / Systems Tech / Support Acts Lighting Operation</div>
+</div>
+    
+         <div class="mySlides fade">
+<img src="Images/GalleryImages/EHOperator2.JPG" style="width:100%">
+   <div class="text">Sidestage Production Services  |   Spiderbait @ UC Refectory   |   2019  |   Systems Tech / Support Acts Lighting Operation</div>
+</div>
+    
+         <div class="mySlides fade">
+  <img src="Images/GalleryImages/EHOperator3.JPG" style="width:100%">
+   <div class="text">Sidestage Production Services   |   BomFunk Mid Year Show   |   2019  |   Systems Tech </div>
+</div>
+    
+         <div class="mySlides fade">
+  <img src="Images/GalleryImages/FadingCyt-2.jpg" style="width:100%">
+   <div class="text">Canberra Youth Theatre  |   Fading   |   2018  |   Lighting Designer / Lighting Operation</div>
+</div>
+
+         <div class="mySlides fade">
+  <img src="Images/GalleryImages/Faster208-1.jpg" style="width:100%">
+   <div class="text">Canberra Youth Theatre  |   Faster   |   2018  |   Lighting Designer / Stage Manager / Technical Director</div>
+</div>
+
+         <div class="mySlides fade">
+  <img src="Images/GalleryImages/TheGreekProject-2.jpeg" style="width:100%">
+   <div class="text">Canberra Youth Theatre  |   The Greek Project   |  2016   |   Lighting Design / Lighting Operation</div>
+</div>
+
+       
+
+
+
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+    <span class="dot" onclick="currentSlide(7)"></span>
+    <span class="dot" onclick="currentSlide(8)"></span>
+
+    
+</div>
+        
+    <script>
+        var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}</script>
+        
+        <br>
+        <br>
+        
+        <a href="Login.html">Click here</a> to login if you are a member that Ethan has given infroantion to. 
+        <br>
+        
+    </body>
+    
+    <footer>
+    
+       <P> Ethan Hamill 2019</P> <a href="Disclamer.html">Disclamer</a> <a href="TermsandCondition.html">Terms & Conditions</a>
+        
+    </footer>
+</html>
